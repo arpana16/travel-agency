@@ -28,9 +28,7 @@
             alt=""
             class="pr-2"
           />
-          <a href="./hotelpage-index.html"
-            ><p class="font-medium">Find Stays</p></a
-          >
+          <a href="#"><p class="font-medium">Find Stays</p></a>
         </div>
       </div>
       <a href="./index.html"
@@ -42,7 +40,7 @@
           class="hover:bg-black hover:text-white p-2 hover:rounded-md px-5 font-medium"
         >
           Login
-        </a>
+      </a>
         <a href="./signup-index.html"
           class="hover:bg-black hover:text-white p-2 hover:rounded-md px-5 font-medium"
         >
@@ -53,7 +51,7 @@
 
     <section>
       <div
-        class="h-[71vh] bg-[url('../image/flight-page-image/header/header-bg.png')] bg-center bg-no-repeat relative"
+        class="h-[71vh] bg-[url('../image/hotel-page-image/header/header-bg.png')] bg-center bg-no-repeat relative"
       >
         <h1 class="text-white font-semibold text-5xl px-20 pt-[100px]">
           Make your travel<br />
@@ -72,43 +70,58 @@
 
           <form class="flex mx-10 mt-5">
             <div class="flex flex-col p-5 mx-3">
-              <span class="absolute top-[70px] left-20 bg-white z-30 px-2 mx-5"
-                >From - To</span
+              <span class="absolute top-[75px] left-20 bg-white z-30 px-1 mx-5"
+                >Enter Destination</span
               >
-              <input
+              <div
                 class="border-gray border-2 rounded-md relative p-5 z-20 flex items-center justify-between"
-                type="text"
-                placeholder="Lahore - Karachi"
-              />
+              >
+                <img
+                  src="../image/flight-page-image/header/car-black.svg"
+                  alt=""
+                  class="pr-2"
+                />
+                <input
+                  type="text"
+                  placeholder="Istanbul , Turkey"
+                  class="border-0 outline-0"
+                />
+              </div>
             </div>
             <div class="flex flex-col p-5 mx-3">
-              <span class="absolute top-[70px] right-30 bg-white z-30 px-2 mx-5"
-                >Trip</span
+              <span class="absolute top-[75px] right-30 bg-white z-30 px-2 mx-5"
+                >Check In</span
               >
               <input
                 class="border-gray border-2 rounded-md relative p-5 z-20"
-                type="text"
-                placeholder="Return"
+                type="date"
+                placeholder="Fri 12/2"
               />
             </div>
             <div class="flex flex-col p-5 mx-3">
-              <span class="absolute top-[70px] left-70 bg-white z-30 px-2 mx-5"
-                >Depart - Return</span
+              <span class="absolute top-[75px] left-70 bg-white z-30 px-2 mx-5"
+                >Check Out</span
               >
               <input
                 class="border-gray border-2 rounded-md relative p-5 z-20"
-                placeholder="07 Nov 22 - 13 Nov 22"
+                type="date"
+                placeholder="Sun 12/4"
               />
             </div>
             <div class="flex flex-col p-5 mx-3">
-              <span class="absolute top-[70px] left-90 bg-white z-30 px-2 mx-5"
-                >Passenger - Class</span
+              <span class="absolute top-[75px] left-90 bg-white z-30 px-2 mx-5"
+                >Rooms & Guests</span
               >
-              <input
-                class="border-gray border-2 rounded-md relative p-5 z-20"
-                type="text"
-                placeholder="1 Passenger, Economy"
-              />
+              <div
+                class="border-gray border-2 rounded-md relative p-5 z-20 flex items-center"
+              >
+                <img
+                  src="../image/hotel-page-image/header/user.svg"
+                  alt=""
+                  class="pr-2"
+                />
+                <input type="text" placeholder="1 Room, 2 Guests" />
+              </div>
             </div>
           </form>
 
@@ -135,23 +148,51 @@
       </div>
     </section>
 
-    <section class="pt-20 mt-20">
-      <div class="flex items-center justify-between mx-20">
-        <div class="mt-20 flex items-start justify-start flex-col py-3">
-          <h2 class="text-2xl font-semibold py-2">Let's go places together</h2>
-          <p>
-            Discover the latest offers and news and start planning your next
-            trip with us.
-          </p>
-        </div>
-        <button class="mt-20 mr-1 p-2 border-2 border-[#8DD3BB] rounded-md">
-          See All
-        </button>
-      </div>
+    <section class="mt-20 pt-20">
+      <h2 class="text-2xl p-2 font-semibold px-20 pt-20">
+        Your recent searches
+      </h2>
 
-      <div class="mb-5">
-        <img src="../image/flight-page-image/map/map.svg" alt="" />
-      </div>
+      <table class="flex justify-center">
+        <tr class="flex p-5">
+          <td
+            class="shadow-[0px_4px_16px_rgba(17,34,17,0.05)] rounded-lg p-3 pr-5 mr-6 flex items-center"
+          >
+            <img src="../image/country/turkey.svg" alt="" />
+            <div class="px-3">
+              <p class="text-lg font-medium">Istanbul , Turkey</p>
+              <p class="">325 places</p>
+            </div>
+          </td>
+          <td
+            class="shadow-[0px_4px_16px_rgba(17,34,17,0.05)] bg-[#FFFFFF] rounded-lg p-3 pr-5 mr-6 flex items-center"
+          >
+            <img src="../image/country/australia.svg" alt="" />
+            <div class="px-3">
+              <p class="text-lg font-medium">Sydney , Australia</p>
+              <p>325 places</p>
+            </div>
+          </td>
+          <td
+            class="shadow-[0px_4px_16px_rgba(17,34,17,0.05)] bg-[#FFFFFF] rounded-lg p-3 pr-5 mr-6 flex items-center"
+          >
+            <img src="../image/country/azerbaijan.svg" alt="" />
+            <div class="px-3">
+              <p class="text-lg font-medium">Baku , Azerbaijan</p>
+              <p>325 places</p>
+            </div>
+          </td>
+          <td
+            class="shadow-[0px_4px_16px_rgba(17,34,17,0.05)] bg-[#FFFFFF] rounded-lg p-3 pr-5 mr-6 flex items-center"
+          >
+            <img src="../image/country/maldives.svg" alt="" />
+            <div class="px-3">
+              <p class="text-lg font-medium">Malé , Maldives</p>
+              <p>325 places</p>
+            </div>
+          </td>
+        </tr>
+      </table>
     </section>
 
     <section>
@@ -175,7 +216,7 @@
           alt=""
           class="relative"
         />
-        <div class="absolute left-[90px] top-[1930px]">
+        <div class="absolute left-[90px] top-[1520px]">
           <div class="flex text-white items-center pb-3">
             <div>
               <h2 class="font-semibold text-xl">Melbourne</h2>
@@ -184,11 +225,11 @@
             <p class="pl-3 font-semibold">$700</p>
           </div>
           <button class="bg-[#8DD3BB] px-10 p-1 rounded-lg ml-5">
-            Book Flight
+            Book a Hotel
           </button>
         </div>
         <img src="../image/flight-page-image/cities/paris.svg" alt="" />
-        <div class="absolute left-[440px] top-[1930px]">
+        <div class="absolute left-[440px] top-[1520px]">
           <div class="flex text-white items-center pb-3">
             <div>
               <h2 class="font-semibold text-xl">Paris</h2>
@@ -197,11 +238,11 @@
             <p class="pl-3 font-semibold">$600</p>
           </div>
           <button class="bg-[#8DD3BB] px-10 p-1 rounded-lg ml-5">
-            Book Flight
+            Book a Hotel
           </button>
         </div>
         <img src="../image/flight-page-image/cities/london.svg" alt="" />
-        <div class="absolute left-[790px] top-[1930px]">
+        <div class="absolute left-[790px] top-[1520px]">
           <div class="flex text-white items-center pb-3">
             <div>
               <h2 class="font-semibold text-xl">London</h2>
@@ -210,11 +251,11 @@
             <p class="pl-3 font-semibold">$350</p>
           </div>
           <button class="bg-[#8DD3BB] px-10 p-1 rounded-lg ml-5">
-            Book Flight
+            Book a Hotel
           </button>
         </div>
         <img src="../image/flight-page-image/cities/columbia.svg" alt="" />
-        <div class="absolute left-[1140px] top-[1930px]">
+        <div class="absolute left-[1140px] top-[1520px]">
           <div class="flex text-white items-center pb-3">
             <div>
               <h2 class="font-semibold text-xl">Columbia</h2>
@@ -223,7 +264,7 @@
             <p class="pl-3 font-semibold">$700</p>
           </div>
           <button class="bg-[#8DD3BB] px-10 p-1 rounded-lg ml-5">
-            Book Flight
+            Book a Hotel
           </button>
         </div>
       </div>
@@ -382,6 +423,6 @@
         </ul>
       </div>
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

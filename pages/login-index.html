@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../image/favicon.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="flex">
+      <div class="md:w-1/2 w-1 p-10">
+        <a href="./index.html"
+          ><img src="../image/login/logo.svg" alt="" class="px-3"
+        /></a>
+        <div class="pt-5">
+          <h2 class="text-3xl font-semibold px-3">Login</h2>
+          <p class="py-5 px-3">Login to access your Golobe account</p>
+          <div class="mt-10">
+            <span class="absolute top-[221px] left-10 bg-white z-30 px-2 mx-5"
+              >Email</span
+            >
+            <input
+              type="email"
+              placeholder="john.doe@gmail.com  "
+              class="border-gray border-2 rounded-md relative p-3 pr-[430px] z-20 flex items-center justify-between ml-3 mb-5 pr-10"
+            />
+          </div>
+          <div class="">
+            <span class="absolute top-[295px] left-10 bg-white z-30 px-2 mx-5"
+              >Password</span
+            >
+            <div
+              class="border-gray border-2 rounded-md relative p-3 pr-[220px] z-20 flex items-center justify-between ml-3 mb-5"
+            >
+              <input
+                type="password"
+                placeholder="********"
+                class="text-start border-0 outline-0"
+              />
+              <img
+                src="../image/login/hide-password.svg"
+                alt=""
+                class="ml-[368px]"
+              />
+            </div>
+          </div>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center pl-3">
+              <input type="checkbox" class="w-4" />
+              <p>Remember me</p>
+            </div>
+            <p class="text-[#FF8682]">Forgot Password</p>
+          </div>
+          <button
+            class="bg-teal-400 shadow -[(0px_4px_4px_rgba(0,0,0,0.25)] px-[290px] ml-2 py-3 my-3 rounded-md"
+          >
+            Login
+          </button>
+          <p class="text-center pb-10">
+            Don't have an account? <a href="./signup-index.html" class="text-[#FF8682]">Sign up</a>
+          </p>
+          <div class="flex items-center pl-[100px]">
+            <hr class="w-44" />
+            <p class="px-3 text-slate-400">Or Login with</p>
+            <hr class="w-44" />
+          </div>
+          <div class="flex justify-around items-center pt-10">
+            <a href="" class="p-3 border-2 border-teal-400 px-20 rounded-md"
+              ><img src="../image/login/facebook.svg" alt=""
+            /></a>
+            <a href="" class="p-3 border-2 border-teal-400 px-20 rounded-md"
+              ><img src="../image/login/google.svg" alt=""
+            /></a>
+            <a href="" class="p-3 border-2 border-teal-400 px-20 rounded-md"
+              ><img src="../image/login/apple-logo.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="w-1/2 px-20 pt-10 md:block hidden">
+        <img src="../image/login//hotel.png" alt="" />
+      </div>
+    </section>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
